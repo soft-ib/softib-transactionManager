@@ -1,12 +1,8 @@
 package com.softib.TransactionManager.controllers;
 
-import java.util.Collections;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
 import org.springframework.http.HttpEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -17,11 +13,10 @@ import org.springframework.web.client.RestTemplate;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import com.netflix.discovery.shared.Application;
-import com.softib.TransactionManager.util.Constants;
 import com.softib.TransactionManager.util.IUserService;
 
 @RestController
-public class RestControllerQuestions {
+public class RestControllerTransactionManager {
 
 	@Autowired
 	IUserService userService;
@@ -31,10 +26,10 @@ public class RestControllerQuestions {
 
 	private String coreServiceId ="core-service";
 
-	@GetMapping(value = "questions")
+	@GetMapping(value = "transaction")
 	@ResponseBody
-	String showTestQuestion() {
-		return "Hello, Help center is working !!!!" + " User and roles : " + userService.getCurrentUserName() + " "
+	String showTestTransaction() {
+		return "Hello, Transaction Manager is working !!!!" + " User and roles : " + userService.getCurrentUserName() + " "
 				+ userService.getCurrentUserRole();
 	}
 

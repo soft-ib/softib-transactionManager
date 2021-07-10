@@ -8,11 +8,11 @@
 		<version>2.3.12.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.softib-transactionManager</groupId>
-	<artifactId>softib-transactionManager</artifactId>
+	<groupId>com.softib-transaction-manager</groupId>
+	<artifactId>softib-transaction-manager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>softib-transactionManager</name>
+	<name>soft-ib-transaction-manager</name>
 	<description>Micro Service Soft IB Transaction Manager</description>
 	<properties>
 		<java.version>1.8</java.version>

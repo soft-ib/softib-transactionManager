@@ -32,7 +32,7 @@ public class RestControllerTransactionManager {
 		return "Hello, Transaction Manager is working !!!!" + " User and roles : " + userService.getCurrentUserName() + " "
 				+ userService.getCurrentUserRole();
 	}
-
+	
 	@GetMapping(value = "/from-core/users")
 	@ResponseBody
 	Object fromCore(@RequestHeader("Authorization") String token) {

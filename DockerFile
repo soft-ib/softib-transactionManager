@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine
-EXPOSE 8093
-COPY target/softib-transactionManager-0.0.1-SNAPSHOT.war softib-transactionManager-0.0.1-SNAPSHOT.war
-ENTRYPOINT ["java","-jar","/softib-transactionManager-0.0.1-SNAPSHOT.war"]
+EXPOSE 8095
+COPY target/softib-transaction-manager-0.0.1-SNAPSHOT.war softib-transaction-manager-0.0.1-SNAPSHOT.war
+ENTRYPOINT ["java","-jar","/softib-transaction-manager-0.0.1-SNAPSHOT.war"]

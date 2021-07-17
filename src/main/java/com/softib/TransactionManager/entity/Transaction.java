@@ -20,7 +20,7 @@ public class Transaction {
 	private int transactionId;
 	private String debitAccount;
 	private String creditAccount;
-	private String amount;
+	private float amount;
 	private String motif;
 	private Timestamp transactionDate;
 	private String creditcardcodenumber;
@@ -46,7 +46,7 @@ public Transaction() {
 
 
 
-public Transaction(int transactionId, String debitAccount, String creditAccount, String amount, String motif,
+public Transaction(int transactionId, String debitAccount, String creditAccount, float amount, String motif,
 		Timestamp transactionDate, String creditcardcodenumber, String chequenumber, int depositorCinNumber,
 		String bankAgenceAdress, DepositType depositType, TransactionType transactionType, WithdrawType withdrawType) {
 	super();
@@ -107,7 +107,7 @@ public void setCreditAccount(String creditAccount) {
 
 
 
-public String getAmount() {
+public float getAmount() {
 	return amount;
 }
 
@@ -116,7 +116,7 @@ public String getAmount() {
 
 
 
-public void setAmount(String amount) {
+public void setAmount(float amount) {
 	this.amount = amount;
 }
 

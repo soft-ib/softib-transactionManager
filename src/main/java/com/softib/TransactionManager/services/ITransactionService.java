@@ -1,11 +1,11 @@
 package com.softib.TransactionManager.services;
 
 import java.util.List;
-
 import com.softib.TransactionManager.entity.Transaction;
 
 public interface ITransactionService {
 	
+	public List<Transaction> findTransactionByPeriod (String datedebut, String datefin);
 	
 	public List<Transaction> getAllTransactions();
 
